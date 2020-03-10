@@ -125,7 +125,7 @@ class Customer extends Person {
   wallet = new Wallet(10);
 
   _isInRange = vendor => {
-    const distance = this.location.distanceTo(vendor, location);
+    const distance = this.location.distanceTo(vendor.location);
 
     const isInRange = distance <= vendor.range;
 
